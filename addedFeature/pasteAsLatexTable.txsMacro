@@ -1,0 +1,21 @@
+{
+"name" : "Paste as LaTeX table" ,
+"tag" : [
+ "%SCRIPT",
+ "text = app.clipboard",
+ "numCols = text.split('\n')[0].split('\t').length",
+ "colspec = Array(numCols+1).join(\"l\")",
+ "",
+ "text = text.replace(/\t/g, \" & \")",
+ "text = text.replace(/\n/g, \" \\\\\n\")",
+ "text = \"\\begin{tabular}{\" + colspec  + \"}\n\" + text + \"\\end{tabular}\n\"",
+ "cursor.insertText(text)"
+ ],
+"description" : [
+ "When you copy multiple rows and/or columns from a spreadsheet application, columns are usually separated by tabs and rows by newline characters. This script takes the text from the clipboard and converts it into the LaTeX table format. The example creates a simple tabular with left-aligned columns. You are free to adapt it to your needs."
+ ],
+"abbrev" : "" ,
+"trigger" : "" ,
+"menu" : "" ,
+"shortcut" : ""
+}

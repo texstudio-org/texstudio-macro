@@ -1,0 +1,24 @@
+{
+"name" : "Auto-correct multiple capital letters" ,
+"tag" : [
+ "%SCRIPT",
+ "typedChar = triggerMatches[0]",
+ "cursor.movePosition(1, cursorEnums.StartOfWord, cursorEnums.KeepAnchor)",
+ "lastWord = cursor.selectedText()",
+ "re = /^[A-Z]{2,}/g",
+ "if (lastWord.match(re)) {",
+ "    cursor.movePosition(1, cursorEnums.NextCharacter, cursorEnums.KeepAnchor)",
+ "    cursor.replaceSelectedText(cursor.selectedText().toLowerCase())",
+ "}",
+ "cursor.movePosition(1, cursorEnums.EndOfWord)",
+ "cursor.clearSelection()",
+ "cursor.insertText(typedChar)"
+ ],
+"description" : [
+ "Auto-correct multiple capital letters at the start of a word while typing. All characters except the first are converted to lowercase. Words consisting only of capital letters are not affected by the auto-correction."
+ ],
+"abbrev" : "" ,
+"trigger" : "[a-z]" ,
+"menu" : "" ,
+"shortcut" : ""
+}
