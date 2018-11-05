@@ -1,0 +1,14 @@
+{
+"name" : "Trivial eval example" ,
+"tag" : [
+ "%SCRIPT",
+ "eval(editor.text());"
+ ],
+"description" : [
+ "This example shows how you can write a simple script that executes the current editor text as another script. It can also be used when writing new scripts, because it is faster than opening the user macro dialog for every change."
+ ],
+"abbrev" : "" ,
+"trigger" : "" ,
+"menu" : "" ,
+"shortcut" : ""
+}
