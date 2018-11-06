@@ -1,0 +1,15 @@
+{
+"name" : "Insert backslash and start completion with "§"" ,
+"tag" : [
+ "%SCRIPT",
+ "cursor.insertText(\"\\\");",
+ "app.normalCompletion();"
+ ],
+"description" : [
+ "On some keyboard layouts, backslash is tedious to type. Hence, other symbols maybe easier to use as a starter to insert LaTeX commands."
+ ],
+"abbrev" : "" ,
+"trigger" : "§" ,
+"menu" : "" ,
+"shortcut" : ""
+}
