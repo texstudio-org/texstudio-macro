@@ -1,5 +1,6 @@
 {
 "name" : "Key Replacement: Automatically insert <space> before comment" ,
+"formatVersion": 1,
 "tag" : [
  " %%"
  ],

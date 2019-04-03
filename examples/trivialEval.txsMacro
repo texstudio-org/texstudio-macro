@@ -1,5 +1,6 @@
 {
 "name" : "Trivial eval example" ,
+"formatVersion": 1,
 "tag" : [
  "%SCRIPT",
  "eval(editor.text());"

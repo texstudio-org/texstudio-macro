@@ -1,5 +1,6 @@
 {
 "name" : "Paste as LaTeX table" ,
+"formatVersion": 1,
 "tag" : [
  "%SCRIPT",
  "text = app.clipboard",

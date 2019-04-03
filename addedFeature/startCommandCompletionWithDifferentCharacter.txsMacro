@@ -1,5 +1,6 @@
 {
 "name" : "Insert backslash and start completion with §" ,
+"formatVersion": 1,
 "tag" : [
  "%SCRIPT",
  "cursor.insertText(\"\\\\\");",

@@ -1,5 +1,6 @@
 {
 "name" : "Auto-correct multiple capital letters" ,
+"formatVersion": 1,
 "tag" : [
  "%SCRIPT",
  "typedChar = triggerMatches[0]",

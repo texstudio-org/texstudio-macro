@@ -1,5 +1,6 @@
 {
 "name" : "Automatic label creation by pressing space after a structure command" ,
+"formatVersion": 1,
 "tag" : [
  "%SCRIPT",
  "// all matches",
