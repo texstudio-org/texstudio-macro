@@ -3,12 +3,12 @@
 "tag" : [
  "%SCRIPT",
  "text = app.clipboard",
- "numCols = text.split('\n')[0].split('\t').length",
+ "numCols = text.split('\\n')[0].split('\\t').length",
  "colspec = Array(numCols+1).join(\"l\")",
  "",
- "text = text.replace(/\t/g, \" & \")",
- "text = text.replace(/\n/g, \" \\\\\n\")",
- "text = \"\\begin{tabular}{\" + colspec  + \"}\n\" + text + \"\\end{tabular}\n\"",
+ "text = text.replace(/\\t/g, \" & \")",
+ "text = text.replace(/\\n/g, \" \\\\\\\\\\n\")",
+ "text = \"\\\\begin{tabular}{\" + colspec  + \"}\\n\" + text + \"\\n\\\\end{tabular}\\n\"",
  "cursor.insertText(text)"
  ],
 "description" : [

@@ -32,14 +32,14 @@
  "type = prefixes[type];",
  "}",
  "// output",
- "editor.write(\"\\label{\"+type+\":\"+title+\"}\");"
+ "editor.write(\"\\\\label{\"+type+\":\"+title+\"}\");"
  ],
 "description" : [
  "",
  "If you want a label created for any section, subsection, chapter, etc. that you add, this script auto-generates a label after pressing <space> behind the structure command (e.g. \chapter{Foo bar}<space>). The label is preceded by a corresponding prefix and the title is sanitized (e.g. \chapter{Foo bar}\label{ch:foo-bar}). TXS provides label generation through the right-click menu in the structure view, but this is IMHO quicker and provides different prefixes for different types of structures."
  ],
 "abbrev" : "" ,
-"trigger" : "(?<=\\((sub)*section|chapter|part|paragraph)\{([^}]*)\})[ ]" ,
+"trigger" : "(?<=\\\\((sub)*section|chapter|part|paragraph)\{([^}]*)\})[ ]" ,
 "menu" : "" ,
 "shortcut" : ""
 }

@@ -2,7 +2,7 @@
 "name" : "Insert backslash and start completion with §" ,
 "tag" : [
  "%SCRIPT",
- "cursor.insertText(\"\\\");",
+ "cursor.insertText(\"\\\\\");",
  "app.normalCompletion();"
  ],
 "description" : [
