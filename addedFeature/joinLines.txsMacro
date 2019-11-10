@@ -1,0 +1,17 @@
+{
+    "abbrev": "",
+    "description": [
+        "Join all selected lines into one line, basically removing all explicit line breaks."
+    ],
+    "formatVersion": 1,
+    "menu": "",
+    "name": "join lines",
+    "shortcut": "",
+    "tag": [
+        "%SCRIPT",
+        "var mytext=cursor.selectedText();",
+        "var txt=mytext.replace(/\\n/g,\"\");",
+        "cursor.replaceSelectedText(txt);"
+    ],
+    "trigger": ""
+}
