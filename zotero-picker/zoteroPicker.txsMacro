@@ -3,7 +3,7 @@
     "formatVersion": 1,
     "tag" : [
         "%SCRIPT",
-        "var url = http://127.0.0.1:23119/better-bibtex/cayw??format=biblatex&command=autocite&texstudio=true&minimize=true;",
+        "var url = 'http://127.0.0.1:23119/better-bibtex/cayw??format=biblatex&command=autocite&texstudio=true&minimize=true';",
         "system('curl -s ' + url);"
     ],
     "description" : [
