@@ -10,7 +10,7 @@
         "This macro lets you CAYW (Cite As You Write). Among other advantages, it lets you type anything which is contained in the references to retrieve them (and not only their citekeys as currently needed by the TeXstudio auto-completion). It needs Zotero (https://www.zotero.org/, to be open when used) and its (properly configured) Better Bibtex add-on (https://github.com/retorquere/zotero-better-bibtex), plus curl (https://curl.haxx.se/) which is available on numerous OSes. The following video lets you see this macro in action: https://youtu.be/Whn9Mk-JwL0. Enjoy!"
     ],
     "abbrev" : "",
-    "trigger" : "",
+    "trigger" : "aaa",
     "menu" : "Zotero Picker",
-    "shortcut" : "aaa"
+    "shortcut" : ""
 }
