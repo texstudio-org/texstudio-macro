@@ -4,15 +4,14 @@
 "tag" : [
  "%SCRIPT",
  "typedChar = triggerMatches[0]",
- "cursor.movePosition(1, cursorEnums.StartOfWord, cursorEnums.KeepAnchor)",
- "lastWord = cursor.selectedText()",
+ "var myCursor=new QDocumentCursor(editor.document(),cursor.lineNumber(),cursor.columnNumber()) ",
+ "myCursor.movePosition(1, cursorEnums.StartOfWord, cursorEnums.KeepAnchor)",
+ "lastWord = myCursor.selectedText()",
  "re = /^[A-Z]{2,}/g",
  "if (lastWord.match(re)) {",
- "    cursor.movePosition(1, cursorEnums.NextCharacter, cursorEnums.KeepAnchor)",
- "    cursor.replaceSelectedText(cursor.selectedText().toLowerCase())",
+ "    myCursor.movePosition(1, cursorEnums.NextCharacter, cursorEnums.KeepAnchor)",
+ "    myCursor.replaceSelectedText(myCursor.selectedText().toLowerCase())",
  "}",
- "cursor.movePosition(1, cursorEnums.EndOfWord)",
- "cursor.clearSelection()",
  "cursor.insertText(typedChar)"
  ],
 "description" : [
