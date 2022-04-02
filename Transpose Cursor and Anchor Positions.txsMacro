@@ -1,0 +1,31 @@
+{
+    "abbrev": "",
+    "description": [
+        "A selection starts at the anchor and ends at the cursor position. This macro interchanges these."
+    ],
+    "formatVersion": 1,
+    "menu": "",
+    "name": "Transpose Cursor and Anchor Positions",
+    "shortcut": "ALT+Y",
+    "tag": [
+        "%SCRIPT",
+        "var crsrLine = cursor.lineNumber();",
+        "var anchLine = cursor.anchorLineNumber();",
+        "var cursrCol = cursor.columnNumber();",
+        "var anchCol = cursor.anchorColumnNumber();",
+        "cursor.movePosition(0,cursorEnums.Right);",
+        "if (anchCol < cursrCol) {",
+        "  cursor.movePosition(cursrCol-anchCol,cursorEnums.Left,cursorEnums.KeepAnchor);",
+        "}",
+        "else {",
+        "  cursor.movePosition(anchCol-cursrCol,cursorEnums.Right,cursorEnums.KeepAnchor);",
+        "}",
+        "if (anchLine < crsrLine) {",
+        "  cursor.movePosition(crsrLine-anchLine,cursorEnums.Up,cursorEnums.KeepAnchor);",
+        "}",
+        "else {",
+        "  cursor.movePosition(anchLine-crsrLine,cursorEnums.Down,cursorEnums.KeepAnchor);",
+        "}"
+    ],
+    "trigger": ""
+}
