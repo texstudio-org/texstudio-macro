@@ -9,12 +9,17 @@
     "shortcut": "Alt+X",
     "tag": [
         "%SCRIPT",
-        "cursor.movePosition(1,cursorEnums.Left);",
-        "cursor.movePosition(2,cursorEnums.Right,cursorEnums.KeepAnchor);",
-        "var chars = cursor.selectedText().split(\"\").reverse().join(\"\");",
+        "/* V1.1 2022-04-18 by octaeder */",
+        "cursor.beginEditBlock();",
+        "cursor.movePosition(1,cursorEnums.Left,cursorEnums.KeepAnchor);",
+        "leftchar = cursor.selectedText();",
         "cursor.removeSelectedText();",
-        "editor.write(chars);",
-        "cursor.movePosition(1,cursorEnums.Left);"
+        "cursor.movePosition(1,cursorEnums.Right,cursorEnums.KeepAnchor);",
+        "rightchar = cursor.selectedText();",
+        "cursor.removeSelectedText();",
+        "editor.write(rightchar + leftchar);",
+        "cursor.movePosition(1,cursorEnums.Left);",
+        "cursor.endEditBlock();"
     ],
     "trigger": ""
 }
