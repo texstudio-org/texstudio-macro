@@ -1,0 +1,28 @@
+{
+    "abbrev": "",
+    "description": [
+        "This macro toggles the case of the character to the left of the cursor to upper (if lower) or to lower case."
+    ],
+    "formatVersion": 1,
+    "menu": "",
+    "name": "Toggle Case of a Character",
+    "shortcut": "Alt+<",
+    "tag": [
+        "%SCRIPT",
+        "/* V1.0 2022-04-19 by octaeder */",
+        "cursor.beginEditBlock();",
+        "cursor.movePosition(1,cursorEnums.Left,cursorEnums.KeepAnchor);",
+        "char = cursor.selectedText();",
+        "cursor.removeSelectedText();",
+        "if (char.toUpperCase() == char) {",
+        "  char = char.toLowerCase();",
+        "}",
+        "else {",
+        "  char = char.toUpperCase();",
+        "}",
+        "editor.write(char);",
+        "cursor.endEditBlock();",
+        ""
+    ],
+    "trigger": ""
+}
