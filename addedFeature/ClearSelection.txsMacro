@@ -1,0 +1,16 @@
+{
+    "abbrev": "",
+    "description": [
+        "Clears a selection, so you don't need to move the cursor"
+    ],
+    "formatVersion": 1,
+    "menu": "",
+    "name": "Clear Selection",
+    "shortcut": "Alt+Q",
+    "tag": [
+        "%SCRIPT",
+        "/* V1.0 2022-06-22 by octaeder */",
+        "cursor.clearSelection();"
+    ],
+    "trigger": ""
+}
