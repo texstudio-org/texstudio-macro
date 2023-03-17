@@ -16,7 +16,7 @@
  "title = title.replace(/[öòóôõ]/gi,\"o\");",
  "title = title.replace(/[üùúûũ]/gi,\"u\");",
  "title = title.replace(/[ç]/gi,\"c\");",
- "title = title.replace(/\W/gi,\"-\").toLowerCase();",
+ "title = title.toLowerCase().match(/\w+/g).join("-");",
  "// get long type",
  "type = matches[2];",
  "",
