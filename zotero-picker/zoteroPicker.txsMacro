@@ -4,7 +4,7 @@
     "tag" : [
         "%SCRIPT",
         "var url = 'http://127.0.0.1:23119/better-bibtex/cayw??format=biblatex&command=autocite&texstudio=true&minimize=true';",
-        "system('curl -s -A "TeXstudio" ' + url);"
+        "system('curl -s -A \"TeXstudio\" ' + url);"
     ],
     "description" : [
         "This macro lets you CAYW (Cite As You Write). Among other advantages, it lets you type anything which is contained in the references to retrieve them (and not only their citekeys as currently needed by the TeXstudio auto-completion). It needs Zotero (https://www.zotero.org/, to be open when used) and its (properly configured) Better Bibtex add-on (https://github.com/retorquere/zotero-better-bibtex), plus curl (https://curl.haxx.se/) which is available on numerous OSes. The following video lets you see this macro in action: https://youtu.be/Whn9Mk-JwL0. Enjoy!"
