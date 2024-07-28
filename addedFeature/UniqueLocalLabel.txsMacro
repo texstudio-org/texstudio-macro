@@ -72,7 +72,10 @@
         "",
         "var lbl=filteredList.length > 0 ? filteredList[filteredList.length - 1] : null;",
         "",
-        "var nr=lbl.slice(prefix.length);",
+        "var nr=0;",
+        "if(lbl){",
+        "  nr=lbl.slice(prefix.length);",
+        "}",
         "var inc=incrementStringOrSetToOne(nr);",
         "const lb=\"\\\\label{\"+prefix+inc+\"}\";",
         "cursor.insertText(lb);"
