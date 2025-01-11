@@ -1,0 +1,15 @@
+{
+    "abbrev": "",
+    "description": [
+        "Replace key _ with _{} when in math mode"
+    ],
+    "formatVersion": 2,
+    "menu": "",
+    "name": "underscore",
+    "shortcut": "",
+    "tag": [
+        "_{%|}"
+    ],
+    "trigger": "(?language:latex)(?inEnv:math)_",
+    "type": "Snippet"
+}

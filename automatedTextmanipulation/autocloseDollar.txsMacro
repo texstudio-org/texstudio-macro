@@ -1,0 +1,15 @@
+{
+    "abbrev": "",
+    "description": [
+        "Generate $ $ when pressing $, unless preceded by \\"
+    ],
+    "formatVersion": 2,
+    "menu": "",
+    "name": "make math mode",
+    "shortcut": "",
+    "tag": [
+        "$%| $"
+    ],
+    "trigger": "(?language:latex)(?<!\\\\\\\\)\\$",
+    "type": "Snippet"
+}
