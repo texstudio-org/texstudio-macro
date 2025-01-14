@@ -1,0 +1,3 @@
+# overwrite language detection and stats on GitHub
+# https://github.com/github-linguist/linguist/blob/main/docs/overrides.md
+*.txsMacro linguist-language=json
