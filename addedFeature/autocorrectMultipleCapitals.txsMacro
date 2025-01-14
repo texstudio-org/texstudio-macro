@@ -1,24 +1,24 @@
 {
-"name" : "Auto-correct multiple capital letters" ,
-"formatVersion": 1,
-"tag" : [
- "%SCRIPT",
- "typedChar = triggerMatches[0]",
- "var myCursor=new QDocumentCursor(editor.document(),cursor.lineNumber(),cursor.columnNumber()) ",
- "myCursor.movePosition(1, cursorEnums.StartOfWord, cursorEnums.KeepAnchor)",
- "lastWord = myCursor.selectedText()",
- "re = /^[A-Z]{2,}/g",
- "if (lastWord.match(re)) {",
- "    myCursor.movePosition(1, cursorEnums.NextCharacter, cursorEnums.KeepAnchor)",
- "    myCursor.replaceSelectedText(myCursor.selectedText().toLowerCase())",
- "}",
- "cursor.insertText(typedChar)"
- ],
-"description" : [
- "Auto-correct multiple capital letters at the start of a word while typing. All characters except the first are converted to lowercase. Words consisting only of capital letters are not affected by the auto-correction."
- ],
-"abbrev" : "" ,
-"trigger" : "[a-z]" ,
-"menu" : "" ,
-"shortcut" : ""
+    "name": "Auto-correct multiple capital letters",
+    "formatVersion": 1,
+    "tag": [
+        "%SCRIPT",
+        "typedChar = triggerMatches[0]",
+        "var myCursor=new QDocumentCursor(editor.document(),cursor.lineNumber(),cursor.columnNumber()) ",
+        "myCursor.movePosition(1, cursorEnums.StartOfWord, cursorEnums.KeepAnchor)",
+        "lastWord = myCursor.selectedText()",
+        "re = /^[A-Z]{2,}/g",
+        "if (lastWord.match(re)) {",
+        "    myCursor.movePosition(1, cursorEnums.NextCharacter, cursorEnums.KeepAnchor)",
+        "    myCursor.replaceSelectedText(myCursor.selectedText().toLowerCase())",
+        "}",
+        "cursor.insertText(typedChar)"
+    ],
+    "description": [
+        "Auto-correct multiple capital letters at the start of a word while typing. All characters except the first are converted to lowercase. Words consisting only of capital letters are not affected by the auto-correction."
+    ],
+    "abbrev": "",
+    "trigger": "[a-z]",
+    "menu": "",
+    "shortcut": ""
 }
