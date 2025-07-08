@@ -1,14 +1,14 @@
 {
-"name" : "Key Replacement: Automatically insert <space> before comment" ,
-"formatVersion": 1,
-"tag" : [
- " %%"
- ],
-"description" : [
- "If you always want to have a space between your text and a comment, you may let TXS automatically insert a space if you type a comment sign (%) right behind a non-space. To do so, you can use a positive lookbehind regular expression as a trigger:"
- ],
-"abbrev" : "" ,
-"trigger" : "(?language:latex)(?<=\\S)%" ,
-"menu" : "" ,
-"shortcut" : ""
+    "name": "Key Replacement: Automatically insert <space> before comment",
+    "formatVersion": 1,
+    "tag": [
+        " %%"
+    ],
+    "description": [
+        "If you always want to have a space between your text and a comment, you may let TXS automatically insert a space if you type a comment sign (%) right behind a non-space. To do so, you can use a positive lookbehind regular expression as a trigger:"
+    ],
+    "abbrev": "",
+    "trigger": "(?language:latex)(?<=\\S)%",
+    "menu": "",
+    "shortcut": ""
 }
