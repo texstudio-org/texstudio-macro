@@ -3,13 +3,11 @@
     "description": [
         "Formats TeX source code by applying proper indentation, compressing multiple whitespace characters into one, etc."
     ],
-    "formatVersion": 1,
+    "formatVersion": 2,
     "menu": "",
     "name": "Format TeX source",
     "shortcut": "",
     "tag": [
-        "%SCRIPT",
-        "",
         "// Configuration",
         "",
         "config = {",
@@ -298,14 +296,14 @@
         "",
         "\tdocumentTokens = [];",
         "\tdocumentText = '';",
-        "\tlines = document.textLines ();",
+        "\tlines = editor.document().textLines ();",
         "\t// When the last line ends with an EOL, TXS adds an extra empty line to the lines array",
         "\tif (lines.length && (lines [lines.length-1] == '')) {",
         "\t\tlines.pop ();",
         "\t}",
         "\tlineOffset = 0;",
         "\tfor (i = 0; i < lines.length; ++i) {",
-        "\t\tif ((lineTokens = document.getLineTokens (i)) === false) {",
+        "\t\tif ((lineTokens = editor.getLineTokens (i)) === false) {",
         "\t\t\tfatal_error ('Line ' + i + ' does not have parse information');",
         "\t\t}",
         "\t\tfor (j = 0; j < lineTokens.length; ++j) {",
@@ -560,4 +558,5 @@
         ""
     ],
     "trigger": ""
+    "type": "Script"
 }
