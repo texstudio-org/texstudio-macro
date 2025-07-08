@@ -557,6 +557,6 @@
         "editor.setText (newText);",
         ""
     ],
-    "trigger": ""
+    "trigger": "",
     "type": "Script"
 }
