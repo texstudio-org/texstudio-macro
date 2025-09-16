@@ -1,0 +1,15 @@
+{
+    "abbrev": "",
+    "description": [
+        "Automatically load pdf when loading a tex file"
+    ],
+    "formatVersion": 2,
+    "menu": "",
+    "name": "view pdf",
+    "shortcut": "",
+    "tag": [
+        "buildManager.runCommand(\"txs:///view-pdf\",editor.fileInfo())"
+    ],
+    "trigger": "?load-file",
+    "type": "Script"
+}
