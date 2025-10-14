@@ -1,0 +1,23 @@
+{
+    "abbrev": "",
+    "description": [
+        "Calls latexident to reformat the complete document.",
+        "It may be necessary to adapt the latexindent command if not found.",
+        "Requirement: latexindent needs to be installed on the computer."
+    ],
+    "formatVersion": 2,
+    "menu": "",
+    "name": "Format with latexindent",
+    "shortcut": "",
+    "tag": [
+        "editor.save()",
+        "fn=editor.fileName();",
+        "command=\"latexindent \"+fn+\" >/dev/null\";",
+        "cmd = system(command);",
+        "cmd.waitForFinished();",
+        "output = cmd.getStdout();",
+        "editor.setText(output);"
+    ],
+    "trigger": "",
+    "type": "Script"
+}
